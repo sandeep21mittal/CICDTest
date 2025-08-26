@@ -18,7 +18,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
 
     - name: Restore NuGet packages
-      run: nuget restore YourSolution.sln
+      run: nuget restore CICDTest.sln
 
     - name: Build solution
-      run: msbuild YourSolution.sln /p:Configuration=Release /p:Platform="Any CPU"
+      run: msbuild CICDTest.sln /p:Configuration=Release /p:Platform="Any CPU"
