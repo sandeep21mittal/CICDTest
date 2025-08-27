@@ -13,5 +13,11 @@ namespace CICDTest.Controllers
         {
             return View();
         }
+
+        public ActionResult Test()
+        {
+
+        }
+
     }
 }
